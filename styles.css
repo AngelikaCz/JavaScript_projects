@@ -1,0 +1,12 @@
+:root{
+    --font-color: #282A3A;
+    --button-color:#735F32;
+    --background-color: #C69749;
+}
+
+body{
+background-color: var(--background-color);
+text-align:center;
+max-width: 200vh;
+margin:0 auto;
+}
