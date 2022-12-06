@@ -3,7 +3,8 @@ project1_button.addEventListener("click", changeColor);
 
 function changeColor() {
   let colored_box = document.getElementById("box_project1");
-  colored_box.style.backgroundColor = "blue";
+  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  colored_box.style.backgroundColor = "#" + randomColor;
 }
 
 let project2_counter = document.getElementById("box_project2");
