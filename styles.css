@@ -58,3 +58,7 @@ button:hover{
     outline: none;
     border: 2px solid var(--button-color);
 }
+
+.counter_text{
+    font-weight: bold;
+}

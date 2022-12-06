@@ -7,7 +7,7 @@ function changeColor() {
 }
 
 let project2_counter = document.getElementById("box_project2");
-project2_counter.addEventListener("change", changeCounter);
+project2_counter.addEventListener("input", changeCounter);
 
 function changeCounter(event) {
   let wordCount = document.getElementById("counter");
