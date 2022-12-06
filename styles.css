@@ -50,4 +50,11 @@ button:hover{
     padding: 0.5rem;
     width:60%;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 5px 5px 5px rgba(40, 42, 58, 0.7);
+    margin-bottom: 1rem;
+}
+
+.input_box:focus{
+    outline: none;
+    border: 2px solid var(--button-color);
 }
