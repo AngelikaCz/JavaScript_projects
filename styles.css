@@ -41,3 +41,13 @@ button:hover{
     color:var(--accent-color);
     transition: all 0.5s ease-out;
 }
+
+.input_box{
+    background-color: var(--light-color);
+    text-align: center;
+    border: 2px solid var(--accent-color);
+    font-size: 1rem;
+    padding: 0.5rem;
+    width:60%;
+    font-family: 'Montserrat', sans-serif;
+}
