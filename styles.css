@@ -17,7 +17,14 @@ h3{
     background-color: var(--light-color);
 padding:0.5rem;
 max-width:30rem;
-margin:2rem auto;}
+margin:0 auto;}
+
+.project{
+    border: 2px solid var(--accent-color);
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 80%;
+}
 
 .color_box{
     width:10rem;
@@ -51,7 +58,7 @@ button:hover{
     width:60%;
     font-family: 'Montserrat', sans-serif;
     box-shadow: 5px 5px 5px rgba(40, 42, 58, 0.7);
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 .input_box:focus{
