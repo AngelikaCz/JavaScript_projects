@@ -14,3 +14,12 @@ function changeCounter(event) {
   let wordCount = document.getElementById("counter");
   wordCount.innerHTML = event.target.value.length;
 }
+
+let plus_button = document.getElementById("plus_button_project3");
+plus_button.addEventListener("click", addOne);
+let minus_button = document.getElementById("minus_button_project3");
+
+function addOne(event) {
+  let changedNumber = document.getElementById("number_project3");
+  changedNumber.innerHTML++;
+}
