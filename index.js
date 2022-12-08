@@ -12,6 +12,5 @@ project2_counter.addEventListener("input", changeCounter);
 
 function changeCounter(event) {
   let wordCount = document.getElementById("counter");
-  let typedLetters = document.getElementById("box_project2").value;
   wordCount.innerHTML = event.target.value.length;
 }
