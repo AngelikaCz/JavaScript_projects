@@ -18,8 +18,14 @@ function changeCounter(event) {
 let plus_button = document.getElementById("plus_button_project3");
 plus_button.addEventListener("click", addOne);
 let minus_button = document.getElementById("minus_button_project3");
+minus_button.addEventListener("click", deductOne);
 
 function addOne(event) {
   let changedNumber = document.getElementById("number_project3");
   changedNumber.innerHTML++;
+}
+
+function deductOne(event) {
+  let changedNumber = document.getElementById("number_project3");
+  changedNumber.innerHTML--;
 }
