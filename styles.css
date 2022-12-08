@@ -34,7 +34,7 @@ margin:0 auto;}
     box-shadow: 10px 5px 5px rgba(40,42,58, 0.7)
 }
 
-button{
+button, .button{
     background-color: var(--button-color);
     color:var(--light-color);
     font-family: 'Montserrat', sans-serif;
@@ -50,7 +50,7 @@ button:hover{
     cursor: pointer;
 }
 
-.input_box{
+.input_box, .input_project4{
     background-color: var(--light-color);
     text-align: center;
     border: 2px solid var(--accent-color);
@@ -62,7 +62,7 @@ button:hover{
     margin: 1rem;
 }
 
-.input_box:focus{
+.input_box:focus, .input_project4:focus{
     outline: none;
     border: 2px solid var(--button-color);
 }
@@ -89,4 +89,8 @@ button:hover{
     width:50px;
     border-radius: 50%;
     margin:0 1rem;
+}
+
+.input_project4{
+    max-width: 40%;
 }
