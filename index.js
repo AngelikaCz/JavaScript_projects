@@ -29,3 +29,10 @@ function deductOne(event) {
   let changedNumber = document.getElementById("number_project3");
   changedNumber.innerHTML--;
 }
+
+let project2_add = document.getElementById("add_item_project4");
+let project2_input = document.getElementById("input_project4");
+let listElement = document.getElementById("project4_placeholder");
+project2_add.addEventListener("click", addItem);
+
+function addItem(event) {}
