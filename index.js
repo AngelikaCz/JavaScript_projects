@@ -39,4 +39,6 @@ function addItem(event) {
   let newElement = document.createElement("p");
   listElement.appendChild(newElement);
   newElement.innerText = project2_input.value;
+  newElement.classList.add("list-styling");
+  project2_input.value = "";
 }
