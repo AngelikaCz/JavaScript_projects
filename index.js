@@ -35,4 +35,8 @@ let project2_input = document.getElementById("input_project4");
 let listElement = document.getElementById("project4_placeholder");
 project2_add.addEventListener("click", addItem);
 
-function addItem(event) {}
+function addItem(event) {
+  let newElement = document.createElement("p");
+  listElement.appendChild(newElement);
+  newElement.innerText = project2_input.value;
+}
