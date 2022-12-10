@@ -41,4 +41,10 @@ function addItem(event) {
   newElement.innerText = project2_input.value;
   newElement.classList.add("list-styling");
   project2_input.value = "";
+  newElement.addEventListener("click", function () {
+    newElement.style.textDecoration = "line-through";
+  });
+  newElement.addEventListener("dblclick", function () {
+    listElement.removeChild(newElement);
+  });
 }
