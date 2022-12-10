@@ -33,9 +33,11 @@ function deductOne(event) {
 let project2_add = document.getElementById("add_item_project4");
 let project2_input = document.getElementById("input_project4");
 let listElement = document.getElementById("project4_placeholder");
+let visibleLegend = document.getElementById("legend");
 project2_add.addEventListener("click", addItem);
 
 function addItem(event) {
+  visibleLegend.style.display = "block";
   let newElement = document.createElement("p");
   listElement.appendChild(newElement);
   newElement.innerText = project2_input.value;
