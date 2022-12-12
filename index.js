@@ -61,12 +61,14 @@ function setClock() {
   let currentDate = new Date();
   let secondsRatio = currentDate.getSeconds() / 60;
   let minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
-  let hourssRatio = (minutesRatio + currentDate.getHours()) / 12;
+  let hoursRatio = (minutesRatio + currentDate.getHours()) / 12;
   setRotation(secondHand, secondsRatio);
   setRotation(minuteHand, minutesRatio);
   setRotation(hourHand, hoursRatio);
 }
 
 function setRotation(element, rotationRatio) {
-  element.style.setProperty("--rotation", rotationRatio);
+  element.style.setProperty("--rotation", rotationRatio * 360);
 }
+
+setClock();
