@@ -50,3 +50,16 @@ function addItem(event) {
     listElement.removeChild(newElement);
   });
 }
+
+setInterval(setClock, 1000);
+
+let hourHand = document.getElementById("hour_hand");
+let minuteHand = document.getElementById("minute_hand");
+let secondHand = document.getElementById("second_hand");
+
+function setClock() {
+  let currentDate = new Date();
+  let secondsRatio = currentDate.getSeconds() / 60;
+  let minutesRatio = (secondsRatio + currentDate.getMinutes()) / 60;
+  let hourssRatio = (minutesRatio + currentDate.getHours()) / 12;
+}
