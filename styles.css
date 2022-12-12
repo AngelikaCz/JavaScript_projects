@@ -198,23 +198,49 @@ background-color: var(--accent-color);
     border: 1px solid var(--background-color);
 }
 
-
-
-
 .clock .hand.second{
     width:1px;
     height:40%;
     background-color: var(--light-color);
-
 }
 .clock .hand.minute {
     width: 7px;
     height: 40%;
-
 }
-
 .clock .hand.hour {
     width: 10px;
     height: 35%;
+}
 
+.slider_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:1rem;
+}
+
+.slider_box{
+    width:17rem;
+    height: 10rem;
+    background-color: var(--accent-color);
+}
+
+.arrow{
+    margin: 3.5rem 2rem;
+}
+
+.right_arrow{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid var(--button-color);
+}
+
+.left_arrow {
+    width:0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid var(--button-color);
 }
