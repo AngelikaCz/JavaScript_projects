@@ -73,12 +73,23 @@ function setRotation(element, rotationRatio) {
 
 setClock();
 
-let previousArrow = document.getElementById("previous_arrow");
-let nextArrow = document.getElementById("next_arrow");
-let sliderBox = document.getElementById("slider_box");
+let currentIndexProject6 = 1;
+displaySlides(currentIndexProject6);
 
-nextArrow.addEventListener("click", changeImage);
-
-function changeImage() {
-  sliderBox.style.backgroundColor = "red";
+function setSlides(index) {
+  displaySlides((currentIndexProject6 += index));
+}
+function displaySlides(index) {
+  let x;
+  let slides = document.getElementsByClassName("slider");
+  if (index > slides.length) {
+    currentIndexProject6 = 1;
+  }
+  if (index < 1) {
+    currentIndexProject6 = slides.length;
+  }
+  for (x = 0; x < slides.length; x++) {
+    slides[x].style.display = "none";
+  }
+  slides[currentIndexProject6 - 1].style.display = "block";
 }
