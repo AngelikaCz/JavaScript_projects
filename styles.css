@@ -230,6 +230,16 @@ background-color: var(--accent-color);
         background-color: red;
 }
 
+.slider_box3{width: 17rem;
+    height: 10rem;
+    background-color: blue;}
+
+.slider_box4 {
+            width: 17rem;
+            height: 10rem;
+            background-color: green;
+        }
+
 .arrow{
     margin: 3.5rem 2rem;
 }
