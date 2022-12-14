@@ -72,3 +72,13 @@ function setRotation(element, rotationRatio) {
 }
 
 setClock();
+
+let leftArrow = document.getElementById("left_arrow");
+let rightArrow = document.getElementById("right_arrow");
+let sliderBox = document.getElementById("slider_box");
+
+rightArrow.addEventListener("click", changeImage);
+
+function changeImage() {
+  sliderBox.style.backgroundColor = "red";
+}
