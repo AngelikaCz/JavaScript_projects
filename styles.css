@@ -274,7 +274,7 @@ display:grid;
 grid-gap: 2px;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-grid-template-areas: "main main main main"
+grid-template-areas: "output output output output"
 "row2_1 row2_2 row2_3 row2_4"
 "row3_1 row3_2 row3_3 row3_4"
 "row4_1 row4_2 row4_3 row4_4"
@@ -282,8 +282,8 @@ grid-template-areas: "main main main main"
 "row6_1 row6_1 row6_2 row5_4"
 }
 
-.main_box{
-    grid-area:main;
+.output{
+    grid-area:output;
 }
 .calculator_row2_1{
     grid-area:row2_1;
