@@ -93,3 +93,6 @@ function displaySlides(index) {
   }
   slides[currentIndexProject6 - 1].style.display = "block";
 }
+
+let output = document.getElementById("output");
+let buttons = Array.from(document.getElementsByClassName("calc_button"));
