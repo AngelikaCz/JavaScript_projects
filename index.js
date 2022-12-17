@@ -99,9 +99,12 @@ let calc_buttons = Array.from(document.getElementsByClassName("calc_button"));
 
 calc_buttons.map((button) => {
   button.addEventListener("click", (e) => {
-    switch (e.target.innerHTML) {
+    switch (e.target.innerText) {
+      case "C":
+        output.innerText = " ";
+        break;
       default:
-        output.innerHTML += e.target.innerHTML;
+        output.innerText += e.target.innerText;
     }
   });
 });
