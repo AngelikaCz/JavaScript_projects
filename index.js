@@ -104,7 +104,12 @@ calc_buttons.map((button) => {
         output.innerText = " ";
         break;
       case "<":
-        output.innerText = output.innerText.slice(0, -1);
+        if (output.innerText) {
+          output.innerText = output.innerText.slice(0, -1);
+        }
+        break;
+      case "=":
+        output.innerText = eval(output.innerText);
         break;
       default:
         output.innerText += e.target.innerText;
