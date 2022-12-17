@@ -109,7 +109,11 @@ calc_buttons.map((button) => {
         }
         break;
       case "=":
-        output.innerText = eval(output.innerText);
+        try {
+          output.innerText = eval(output.innerText);
+        } catch {
+          output.innerText = "Error!";
+        }
         break;
       default:
         output.innerText += e.target.innerText;
