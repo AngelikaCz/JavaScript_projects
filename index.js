@@ -93,10 +93,3 @@ function displaySlides(index) {
   }
   slides[currentIndexProject6 - 1].style.display = "block";
 }
-
-const numberButtons_project = document.querySelectorAll("[data-number]");
-const operationButtons_project = document.querySelectorAll("[data-operation]");
-const equalButton_project = document.querySelector("[data-equal]");
-const clearButton_project = document.querySelector("[data-all-clear]");
-const deleteButton_project = document.querySelector("[data-delete]");
-const output_project7 = document.querySelector("[data-output]");
