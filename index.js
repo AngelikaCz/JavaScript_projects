@@ -99,10 +99,9 @@ let calc_buttons = Array.from(document.getElementsByClassName("calc_button"));
 
 calc_buttons.map((button) => {
   button.addEventListener("click", (e) => {
-    console.log("clicked");
-    console.log(e);
-
-    console.log(e.target);
-    console.log(e.target.innerText);
+    switch (e.target.innerHTML) {
+      default:
+        output.innerHTML += e.target.innerHTML;
+    }
   });
 });
