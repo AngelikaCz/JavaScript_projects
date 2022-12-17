@@ -266,6 +266,11 @@ background-color: var(--accent-color);
     background-color: var(--light-color);
 }
 
+.calculator_box:hover{
+    background-color: var(--accent-color);
+    color:var(--light-color);
+}
+
 .container_calculator{
     max-width: 20rem;
 margin:1rem auto;
