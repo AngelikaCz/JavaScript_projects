@@ -120,3 +120,32 @@ calc_buttons.map((button) => {
     }
   });
 });
+
+const gameBoard = document.querySelector("#gameBoard");
+const ctx = gameBoard.getContext("2d");
+const scoreText = document.querySelector("#scoreText");
+const resetButton = document.querySelector("#resetButton");
+const gameHeight = gameBoard.height;
+const gameWidth = gameBoard.width;
+const boardBackground = "red";
+const paddle1Color = "blue";
+const paddle2Color = "green";
+const paddleBoarder = "yellow";
+const ballColor = "black";
+const ballBorderColor = "brown";
+const ballRadius = 12.5;
+const paddleSpeed = 50;
+let intervalID;
+let ballSpeed = 1;
+let ballX = gameWidth / 2;
+let bally = gameHeight / 2;
+let ballXDirection = 0;
+let ballYDirection = 0;
+let player1Score = 0;
+let player2Score = 0;
+let paddle1 = {
+  width: 25,
+  height: 100,
+  x: 0,
+  y: 0,
+};
