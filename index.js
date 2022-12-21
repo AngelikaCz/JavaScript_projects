@@ -149,3 +149,12 @@ let paddle1 = {
   x: 0,
   y: 0,
 };
+let paddle2 = {
+  width: 25,
+  height: 100,
+  x: gameWidth - 25,
+  y: gameHeight - 100,
+};
+
+window.addEventListener("keydown", changeDirection);
+resetButton.addEventListener("click", resetGame);
