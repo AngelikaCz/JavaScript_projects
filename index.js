@@ -138,7 +138,7 @@ const paddleSpeed = 50;
 let intervalID;
 let ballSpeed = 1;
 let ballX = gameWidth / 2;
-let bally = gameHeight / 2;
+let ballY = gameHeight / 2;
 let ballXDirection = 0;
 let ballYDirection = 0;
 let player1Score = 0;
@@ -192,4 +192,35 @@ function drawPaddles() {
   ctx.fillStyle = paddle2Color;
   ctx.fillRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
   ctx.strokeRect(paddle2.x, paddle2.y, paddle2.width, paddle2.height);
+}
+
+function changeDirection(event) {
+  const keyPressed = event.keyCode;
+  const paddle1Up = 87;
+  const paddle1Down = 83;
+  const paddle2Up = 38;
+  const paddle2Down = 40;
+
+  switch (keyPressed) {
+    case paddle1Up:
+      if (paddle1.y > 0) {
+        paddle1.y -= paddleSpeed;
+      }
+      break;
+    case paddle1Down:
+      if (paddle1.y < gameHeight - paddle1.gameHeight) {
+        paddle1.y += paddleSpeed;
+      }
+      break;
+    case paddle2Up:
+      if (paddle2.y > 0) {
+        paddle2.y -= paddleSpeed;
+      }
+      break;
+    case paddle2Down:
+      if (paddle2.y < gameHeight - paddle2.gameHeight) {
+        paddle2.y += paddleSpeed;
+      }
+      break;
+  }
 }
