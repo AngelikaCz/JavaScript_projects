@@ -160,7 +160,22 @@ let paddle2 = {
 //resetButton.addEventListener("click", resetGame);
 
 //gameStart();
-drawPaddles();
+
+function gameStart() {
+  createBall();
+  nextTick();
+}
+
+function nextTick() {
+  intervalID = setTimeout(() => {
+    clearBoard();
+    drawPaddles();
+    moveBall();
+    drawBall(ballX, ballY);
+    checkCollision();
+    nextTick();
+  }, 10);
+}
 
 function drawPaddles() {
   ctx.strokeStyle = paddleBorder;
