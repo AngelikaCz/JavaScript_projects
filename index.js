@@ -177,6 +177,11 @@ function nextTick() {
   }, 10);
 }
 
+function clearBoard() {
+  ctx.fillStyle = boardBackground;
+  ctx.fillRect(0, 0, gameWidth, gameHeight);
+}
+
 function drawPaddles() {
   ctx.strokeStyle = paddleBorder;
 
