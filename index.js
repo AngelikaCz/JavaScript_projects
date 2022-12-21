@@ -130,7 +130,7 @@ const gameWidth = gameBoard.width;
 const boardBackground = "red";
 const paddle1Color = "blue";
 const paddle2Color = "green";
-const paddleBoarder = "yellow";
+const paddleBorder = "yellow";
 const ballColor = "black";
 const ballBorderColor = "brown";
 const ballRadius = 12.5;
@@ -156,5 +156,15 @@ let paddle2 = {
   y: gameHeight - 100,
 };
 
-window.addEventListener("keydown", changeDirection);
-resetButton.addEventListener("click", resetGame);
+//window.addEventListener("keydown", changeDirection);
+//resetButton.addEventListener("click", resetGame);
+
+//gameStart();
+drawPaddles();
+
+function drawPaddles() {
+  ctx.strokeStyle = paddleBorder;
+  ctx.fillStyle = paddle1Color;
+  ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+  ctx.strokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+}
