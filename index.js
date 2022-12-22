@@ -156,7 +156,7 @@ let paddle2 = {
   y: gameHeight - 100,
 };
 
-//window.addEventListener("keydown", changeDirection);
+window.addEventListener("keydown", changeDirection);
 //resetButton.addEventListener("click", resetGame);
 
 gameStart();
@@ -224,6 +224,27 @@ function drawBall(ballX, ballY) {
   ctx.arc(ballX, ballY, ballRadius, 0, 2 * Math.PI);
   ctx.stroke();
   ctx.fill();
+}
+
+function checkCollision() {
+  if (ballY <= 0 + ballRadius) {
+    ballYDirection *= -1;
+  }
+  if (ballY >= gameHeight - ballRadius) {
+    ballYDirection *= -1;
+  }
+  if (ballX <= 0) {
+    player2Score += 1;
+    updateScore();
+    createBall();
+    return;
+  }
+  if (ballX >= gameWidth) {
+    player1Score += 1;
+    updateScore();
+    createBall();
+    return;
+  }
 }
 
 function changeDirection(event) {
