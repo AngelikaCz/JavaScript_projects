@@ -291,3 +291,7 @@ function changeDirection(event) {
       break;
   }
 }
+
+function updateScore() {
+  scoreText.textContent = `${player1Score}:${player2Score}`;
+}
