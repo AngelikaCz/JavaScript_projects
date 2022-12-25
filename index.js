@@ -317,6 +317,6 @@ function resetGame() {
   ballXDirection = 0;
   ballYDirection = 0;
   updateScore();
-  clearInterval(IntervalID);
+  clearInterval(intervalID);
   gameStart();
 }
