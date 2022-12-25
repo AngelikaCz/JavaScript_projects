@@ -125,6 +125,7 @@ const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
 const scoreText = document.querySelector("#scoreText");
 const resetButton = document.querySelector("#resetButton");
+const startButton = document.querySelector("#startButton");
 const gameHeight = gameBoard.height;
 const gameWidth = gameBoard.width;
 const boardBackground = "red";
@@ -158,8 +159,7 @@ let paddle2 = {
 
 window.addEventListener("keydown", changeDirection);
 resetButton.addEventListener("click", resetGame);
-
-gameStart();
+startButton.addEventListener("click", gameStart);
 
 function gameStart() {
   createBall();
