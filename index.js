@@ -323,6 +323,9 @@ function resetGame() {
 
 let btnRef = document.querySelectorAll(".project9-button");
 let restartBtn = document.getElementById("project9RestartButton");
+let popupRef = document.querySelector(".project9-popup");
+let newGameBtn = document.getElementById("project9-new-game");
+let msgRef = document.getElementById("project9-message");
 
 let winningPatten = [
   [0, 1, 2],
