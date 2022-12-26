@@ -320,3 +320,20 @@ function resetGame() {
   clearInterval(intervalID);
   gameStart();
 }
+
+let btnRef = document.querySelectorAll(".project9-button");
+let restartBtn = document.getElementById("project9RestartButton");
+
+let winningPatten = [
+  [0, 1, 2],
+  [0, 3, 6],
+  [2, 5, 8],
+  [6, 7, 8],
+  [3, 4, 5],
+  [1, 4, 7],
+  [0, 4, 8],
+  [2, 4, 6],
+];
+
+let xTurn = true;
+let count = 0;
