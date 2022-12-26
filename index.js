@@ -337,3 +337,7 @@ let winningPatten = [
 
 let xTurn = true;
 let count = 0;
+
+const disableButtons = () => {
+  btnRef.forEach((element) => (element.disabled = true));
+};
