@@ -343,4 +343,13 @@ let count = 0;
 
 const disableButtons = () => {
   btnRef.forEach((element) => (element.disabled = true));
+  popupRef.classList.remove("project9-hide");
+};
+
+const enableButtons = () => {
+  btnRef.forEach((element) => {
+    element.innerText = "";
+    element.disabled = false;
+  });
+  popupRef.classList.add("project9-hide");
 };
