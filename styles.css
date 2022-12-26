@@ -380,3 +380,21 @@ grid-template-areas: "output output output output"
     max-width:10rem;
     margin:1rem auto;
 }
+
+.project9-popup{
+    background-color: var(--accent-color);
+   z-index:2;
+   position: relative;
+   bottom:250px;
+   height: 14rem;
+   font-size:2rem;
+}
+
+.project9-message{
+    padding: 25px;
+color:var(--light-color);
+}
+.project9-hide{
+    display:none;
+}
+
