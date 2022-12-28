@@ -367,3 +367,13 @@ const drawFunction = () => {
   disableButtons();
   msgRef.innerHTML = "&#x1F60E; <br> It's a Draw";
 };
+
+newGameBtn.addEventListener("click", () => {
+  count = 0;
+  enableButtons();
+});
+
+restartBtn.addEventListener("click", () => {
+  count = 0;
+  enableButtons();
+});
