@@ -392,3 +392,24 @@ const winChecker = () => {
     }
   }
 };
+
+btnRef.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (xTurn) {
+      xTurn = false;
+      element.innerText = "X";
+      element.disabled = true;
+    } else {
+      xTurn = true;
+      element.innerText = "O";
+      element.disabled = true;
+    }
+    count += 1;
+    if (count == 9) {
+      drawFunction();
+    }
+    winChecker();
+  });
+});
+
+window.onload = enableButtons;
