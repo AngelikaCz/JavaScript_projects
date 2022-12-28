@@ -362,3 +362,8 @@ const winFunction = (letter) => {
     msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
   }
 };
+
+const drawFunction = () => {
+  disableButtons();
+  msgRef.innerHTML = "&#x1F60E; <br> It's a Draw";
+};
