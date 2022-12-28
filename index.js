@@ -327,7 +327,7 @@ let popupRef = document.querySelector(".project9-popup");
 let newGameBtn = document.getElementById("project9-new-game");
 let msgRef = document.getElementById("project9-message");
 
-let winningPatten = [
+let winningPattern = [
   [0, 1, 2],
   [0, 3, 6],
   [2, 5, 8],
@@ -352,4 +352,13 @@ const enableButtons = () => {
     element.disabled = false;
   });
   popupRef.classList.add("project9-hide");
+};
+
+const winFunction = (letter) => {
+  disableButtons();
+  if (letter == "X") {
+    msgRef.innerHTML = "&#x1F389; <br> 'X' Wins";
+  } else {
+    msgRef.innerHTML = "&#x1F389; <br> 'O' Wins";
+  }
 };
