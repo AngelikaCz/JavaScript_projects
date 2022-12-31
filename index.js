@@ -423,5 +423,10 @@ searchBtn.addEventListener("click", (event) => {
   let userInput = document.getElementById("project10_input").value;
   if (userInput.length == 0) {
     result.innerHTML = `<h3 class="project10_warning">Please type the dish name</h3>`;
+  } else {
+    axios.get(url).then((response) => {
+      const recipe = response.data.meals;
+      console.log(recipe);
+    });
   }
 });
