@@ -43,7 +43,7 @@ button, .button{
     box-shadow: 5px 5px 5px rgba(40, 42, 58, 0.7)
 }
 
-button:hover{
+button:hover, .button:hover{
     background-color: var(--light-color);
     color:var(--accent-color);
     transition: all 0.5s ease-out;
@@ -397,4 +397,19 @@ color:var(--light-color);
 .project9-hide{
     display:none;
 }
+
+.project10_box {
+    margin: 1rem;
+}
+
+.project10_input{
+    font-family: 'Montserrat', sans-serif;
+font-size: 1rem;
+padding: 9px;
+border: 2px solid var(--accent-color);
+width: 40%;}
+
+.project10_search {
+    font-family: 'Montserrat', sans-serif;
+font-size: 1rem;}
 
