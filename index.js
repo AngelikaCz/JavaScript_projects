@@ -413,3 +413,7 @@ btnRef.forEach((element) => {
 });
 
 window.onload = enableButtons;
+
+let result = document.getElementById("project10_result");
+let searchBtn = document.getElementById("project10_search");
+let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
