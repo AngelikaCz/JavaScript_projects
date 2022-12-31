@@ -417,3 +417,11 @@ window.onload = enableButtons;
 let result = document.getElementById("project10_result");
 let searchBtn = document.getElementById("project10_search");
 let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+
+searchBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  let userInput = document.getElementById("project10_input").value;
+  if (userInput.length == 0) {
+    result.innerHTML = `<h3 class="project10_warning">Please type the dish name</h3>`;
+  }
+});
